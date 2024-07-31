@@ -46,11 +46,3 @@ let c = 20;
 // let res = !(val)
 // console.log(res);
 
-// <=
-
-
-
-
-
-
-
