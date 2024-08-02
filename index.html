@@ -27,15 +27,17 @@
     <h1 class="name"> Keerthana</h1>
     <h1 class="name"> Keerthana</h1>
 
-
-    <!-- <div id="cont">
-
-    </div> -->
+    <button id="btn">Click Me</button>
+    <div id="cont">
+<h2>Lorem, ipsum dolor.</h2>
+    </div>
 
     <img src="./rose1.jpeg" alt="Rose Flower " id="img">
-
-
     <script>
+
+
+        // console.log(document)
+        // console.log(window)
 
         // let val = document.getElementsByTagName('h1')[0];
         // let val = document.getElementsByTagName('h1')[0];
@@ -49,14 +51,40 @@
 
         // console.log(val)
 
-        // let box = document.getElementById('cont');
+        let box = document.getElementById('cont');
         // let box = document.getElementById('cont');
         // let img = document.getElementById('img');
-        // box.innerHTML="<h1> Keerthana </h1>"
-        // val.innerText += "Sowmiya";
+
+
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+            box.style.color='#b3d8d6'
+           
+        })
+        // btn.addEventListener('mouseover', () => {
+        //     // val.innerText = "Sowmiya ";
+        //     img.setAttribute('src', './rose2.jpeg')
+        // })
+        // btn.addEventListener('mouseleave', () => {
+        //     // val.innerText = "Sowmiya ";
+        //     img.setAttribute('src', './rose2.jpeg')
+        // })
+        // btn.addEventListener('mouseup', () => {
+        //     // val.innerText = "Sowmiya ";
+        //     img.setAttribute('src', './rose2.jpeg')
+        // })
+        // btn.addEventListener('mouseenter', () => {
+        //     // val.innerText = "Sowmiya ";
+        //     img.setAttribute('src', './rose2.jpeg')
+        // })
+        // box.innerHTML="<h1>  Keerthana  </h1>"
+        // val.innerText += "  Sowmiya  ";
+
+
         // img.setAttribute('src','./rose2.jpeg')
         // console.log(alert("Message"));
         // console.log(confirm("Welcome"));   
+
 
 
 

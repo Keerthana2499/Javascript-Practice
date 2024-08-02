@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            height: 400px;
+            width: 400px;
+            border: 5px solid blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box"></div>
+
+    <button id="btn"> Change Colur </button>
+    <script>
+        let box = document.getElementById('box')
+        let val = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f'];
+
+        let color = '#'
+
+        let btn = document.getElementById('btn')
+
+
+        function getColour() {
+            let indVal = Math.floor(Math.random() * 16);
+            return val[indVal];
+
+
+        }
+
+
+        for (i = 1; i <= 6; i++) {
+
+            color += getColour()
+
+        }
+
+
+        btn.addEventListener('click', () => {
+            box.style.backgroundColor = color;
+            
+        })
+    </script>
+</body>
+
+</html>
