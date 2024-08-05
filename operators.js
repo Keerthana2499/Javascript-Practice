@@ -45,4 +45,3 @@ let c = 20;
 // let val = false;
 // let res = !(val)
 // console.log(res);
-
