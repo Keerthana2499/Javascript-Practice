@@ -5,4 +5,4 @@ let time = new Date();
 // console.log(time.getHours())
 // console.log(time.getMilliseconds())
 // console.log(time.getMonth())
-console.log(time.getSeconds())
+// console.log(time.getSeconds())
