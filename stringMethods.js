@@ -22,13 +22,6 @@ let a = "7449143583";
 // let res = a.padEnd(14, '+91-')
 // let res = a.slice(5,8)
 // let res = a.substring(0,5);
-
-
-
-
-
-
 // let res = a.length;
 // console.log(a.length);
-
 console.log(res)

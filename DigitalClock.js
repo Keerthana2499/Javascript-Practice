@@ -1,18 +1,17 @@
+const xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://jsonplaceholder.typicode.com/todos/1', true);
 
+xhr.onload = function () {
+  if (xhr.status === 200) {
+    console.log(JSON.parse(xhr.responseText));
+  
+} else {
+    console.error('Error:', xhr.statusText);
+  }
+};
 
-setInterval(() => {
+xhr.onerror = function () {
+  console.error('Request failed');
+};
 
-    let now = new Date();
-
-    let month = now.getMonth() + 1;
-
-    console.log(now.getHours() + ' : ' + now.getMinutes() + " : " + now.getSeconds());
-
-    console.log(now.getDate() + ' : ' + month + " : " + now.getFullYear())
-}, 1000)
-
-
-
-
-
-
+xhr.send();
